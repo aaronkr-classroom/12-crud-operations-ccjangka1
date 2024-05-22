@@ -56,6 +56,11 @@ app.get("/subscribers", subscribersController.getAllSubscribers); // 모든 구�
  * Listing 18.10 (p. 269)
  * userController.js를 위에서 요청
  */
+app.get(
+  "/users",
+  usersController.index,
+  usersController.indexView
+);
 // @TODO: index 라우트 생성
 
 /**
